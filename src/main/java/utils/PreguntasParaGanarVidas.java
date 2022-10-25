@@ -16,8 +16,7 @@ public class PreguntasParaGanarVidas {
                 8. Pingüino.
                 9. Zorro de la Patagonia.
                 10. Ñandú.""");
-        int opcion = ingresar();
-        menuPreguntasPorAnimalElegido(opcion);
+        menuPreguntasPorAnimalElegido(ingresar());
     }
 
     private static void menuPreguntasPorAnimalElegido(int opcion){
