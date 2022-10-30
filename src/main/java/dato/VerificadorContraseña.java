@@ -1,8 +1,10 @@
-package datos;
+package dato;
 
-public class VerificadorContraseñaJugador {
+public class VerificadorContraseña {
     public static void main(String[] args) {
-        System.out.println(verificarContraseña(""));
+        System.out.println(esAlfaNumerico("kjhdhskjhsk"));
+        System.out.println(esAlfaNumerico("122438743298234"));
+
     }
 
     public static boolean verificarContraseña(String contrasena){
@@ -13,8 +15,9 @@ public class VerificadorContraseñaJugador {
         }
     }
 
-    private static boolean esAlfaNumerico(String s) {
-        return s != null && s.matches("^[a-zA-Z0-9-ñ]*$");
+    //TODO reparar que valide correctamente que sea alfanumerico, actualmente acepta todo
+    public static boolean esAlfaNumerico(String s) {
+        return s != null && s.matches("^[a-zA-Z0-9]*$");
     }
 
     private static boolean esEspacioVacio(String contrasena){

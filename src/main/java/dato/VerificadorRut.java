@@ -1,6 +1,6 @@
-package datos;
+package dato;
 
-public class VerificadorRutJugador {
+public class VerificadorRut {
     private static String limpiarRut(String input) {
         input = input.replaceAll("\\p{Punct}", "");
         return input;
